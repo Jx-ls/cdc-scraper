@@ -30,8 +30,6 @@ while True:
         )
     except erp.ErpLoginError as e:
         print(f"[ERP LOGIN FAILED] {e}", flush=True)
-        if args.cron:
-            break
         print("[RETRYING]", flush=True)
         continue
 
